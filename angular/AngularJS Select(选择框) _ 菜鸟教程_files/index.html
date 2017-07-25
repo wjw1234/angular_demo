@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://s0.2mdn.net/6219955/1491851351227/728x90_CHINA/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+	<meta name="“ad.size”" content="“width=728,height=90”">
+	<title>BUSA_China_728x90</title>
+	<link rel="stylesheet" href="./style(1).css">
+	<script src="./TweenMax.min.js.&#19979;&#36733;"></script>
+	<script src="./EasePack.min.js.&#19979;&#36733;"></script>
+	<script src="./CSSPlugin.min.js.&#19979;&#36733;"></script>
+	<script type="text/javascript">
+		var clickTag = "http://www.google.com";
+	</script>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+<body>
+	<div id="container">
+		<div id="ad">
+			<div id="banner">
+				<div id="endframe">
+					<div id="endframe_txt"></div>
+				</div>
+				<div id="logo_container">
+					<div id="logo_main"></div>
+					<div id="dots">
+						<svg>
+ 							 <circle class="dot" id="d_01" cx="62" cy="132" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_02" cx="102" cy="132" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_03" cx="182" cy="132" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_04" cx="230" cy="132" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_05" cx="238" cy="156" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_06" cx="182" cy="164" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_07" cx="62" cy="196" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_08" cx="78" cy="205" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_09" cx="110" cy="205" r="4" fill="white"></circle>
+ 							 <circle class="dot" id="d_10" cx="222" cy="205" r="4" fill="white"></circle>
+						</svg>
+					</div>
+					<div id="lockup"></div>
+				</div>
+
+				
+
+
+				<div id="cta_container">
+					<div id="cta_box"></div>
+					<div id="cta_txt"></div>
+					<div id="cta_arr"></div>
+				</div>
+
+				<div id="right_bg"></div>
+				
+				<div id="loc_03"></div>
+				<div class="go_usa" id="g_03"></div>
+				<div id="loc_02"></div>
+				<div class="go" id="g_02"></div>
+				<div id="loc_01"></div>
+				<div class="go" id="g_01"></div>
+				
+				
+				
+				<div id="overlay"></div>
+				<div id="hotspot" onclick="window.open(window.clickTag)"></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</body></html>

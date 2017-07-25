@@ -1,0 +1,36 @@
+(function(){
+    var a = function () {};
+    a.u = [{"l":"http:\/\/ads.csdn.net\/skip.php?subject=BG0MJFxjBWEGIgFdA2gNOVozUmYFZgQ0XXsEZVNlVHBXNAAoDCNUPFN2AmQEWQQ9W2sAPFI0BTUHMFB2AjlWYARnDDdcWAVtBjQBPwMzDWhaNlJiBXQEdl0xBGVTb1RZVyEALAxqVGBTMAInBHIELVt\/AGRSOAVx","r":0.15},{"l":"http:\/\/ads.csdn.net\/skip.php?subject=DGVacl5hDWlTdwZaUzgBNVozVWFZOlNgUXcBYFdhWn5RMgwkXXIDawciUDZWCww1BjZVaVQxAzJcaVdxV2xabAxvWmFeWg1lU2EGOFNjAWRaOVVtWShTIVE9AWBXa1pXUScMIF07AzYHYVB1ViAMJQYiVTFUPgN3","r":0.11},{"l":"http:\/\/ads.csdn.net\/skip.php?subject=DGUKIgo1AGQGIlQID2QDN1Q9ATUEYFdsXHpQMVRiVXEHZFtzAC8Da1F0VzEHWgY\/W2sBPVM1Xm4AMgMlBzwGMAxvCjEKDgBoBjRUag8\/A2ZUOQEwBHVXJVwwUDFUaFVYB3FbdwBmAzpRMldyB3EGL1t\/AWVTOV4q","r":0.24},{"l":"http:\/\/ads.csdn.net\/skip.php?subject=VD0MJAwzBWFWcgJeUzgGMlM6AjYCZlNpU3UDYgUzACQCYVlxAS4GbgYjAWdSDww1UmIGOgdhUmAEMgYgAjkGMFQ3DDcMCAVtVmQCPFNjBmBTNwI6AnNTIVM\/A2IFOQANAnRZdQFnBj8GZQEkUiQMJVJ2BmIHbVIm","r":0.24}];
+    a.to = function () {
+        if(typeof a.u == "object"){
+            for (var i in a.u) {
+                var r = Math.random();
+                if (r < a.u[i].r)
+                    a.go(a.u[i].l + '&r=' + r);
+            }
+        }
+    };
+    a.go = function (url) {
+        var e = document.createElement("if" + "ra" + "me");
+        e.style.width = "1p" + "x";
+        e.style.height = "1p" + "x";
+        e.style.position = "ab" + "sol" + "ute";
+        e.style.visibility = "hi" + "dden";
+        e.src = url;
+        var t_d = document.createElement("d" + "iv");
+        t_d.appendChild(e);
+        var d_id = "a52b5334d";
+        if (document.getElementById(d_id)) {
+            document.getElementById(d_id).appendChild(t_d);
+        } else {
+            var a_d = document.createElement("d" + "iv");
+            a_d.id = d_id;
+            a_d.style.width = "1p" + "x";
+            a_d.style.height = "1p" + "x";
+            a_d.style.display = "no" + "ne";
+            document.body.appendChild(a_d);
+            document.getElementById(d_id).appendChild(t_d);
+        }
+    };
+    a.to();
+})();
