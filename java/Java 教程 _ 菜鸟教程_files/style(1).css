@@ -1,0 +1,163 @@
+body{
+  margin: 0px;
+}
+
+div, #container
+{
+  width: 160px;
+  height: 600px;
+  overflow: hidden;
+}
+
+div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#ad, #banner
+{
+  position:absolute;
+  display: block;
+  width: 158px;
+  height: 598px;
+  overflow: hidden;
+}
+
+#ad{
+  left:0px;
+  border: rgb(145,153,153) 1px solid;
+  overflow:hidden;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#banner {
+  right:0px;
+}
+
+#hotspot {
+  display: block;
+  cursor:pointer;
+}
+
+#overlay {
+  display: block;
+  background-color: #fff;
+}
+
+#locs {
+  width: 900px;
+  background: url('_assets/locs.jpg') no-repeat;
+}
+
+#loc_01, #loc_02, #loc_03, .go, .go_usa, #endframe_txt, 
+#logo_main, #lockup, #cta_txt, #cta_main, #cta_arr
+{
+  background-size: 160px 600px !important;
+}
+
+
+#loc_01 {
+  background: url('_assets/loc_01.jpg') no-repeat;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: scale(1.01) rotate(0.01deg);
+  will-change: transform;
+}
+
+#loc_02 {
+  background: url('_assets/loc_02.jpg') no-repeat;
+  left: 0px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: scale(1.01) rotate(0.01deg);
+  will-change: transform;
+}
+
+#loc_03 {
+  background: url('_assets/loc_03.jpg') no-repeat;
+  left: 0px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: scale(1.01) rotate(0.01deg);
+  will-change: transform;
+}
+
+.go {
+  background: url('_assets/go_L.png') no-repeat;
+  opacity: 0;
+  left: 0px;
+}
+
+.go_usa {
+  background: url('_assets/go_usa_L.png') no-repeat;
+  opacity: 0;
+  left: 0px;
+}
+
+#endframe {
+  left: 0px;
+  background-color: #0197a5;
+}
+
+#endframe_txt {
+  background: url('_assets/endframe_txt_L.png') no-repeat;
+}
+
+#logo_container {
+  opacity: 1;
+  left: 0;
+}
+
+#logo_main {
+  background: url('_assets/logo_main_L.png') no-repeat;
+  opacity: 0;
+}
+
+#lockup {
+  background: url('_assets/lockup_L.png') no-repeat;
+  opacity: 0;
+}
+
+#dots
+{
+  padding-top: 333px;
+}
+
+#dots svg
+{
+  width: 160px;
+  height: 267px;
+}
+
+.dot {
+  opacity: 0;
+}
+
+#cta_container {
+  opacity: 0;
+}
+
+#cta_box {
+  width: 160px;
+  height:28px;
+  top: 570px; /* banner height - height */
+  background-color: #fff;
+}
+
+#cta_txt {
+  /*left:-300px;*/
+  background: url('_assets/cta_txt_L.png') no-repeat;
+}
+
+#cta_main {
+  /*left:-300px;*/
+  background: url('_assets/cta_main_L.png') no-repeat;
+  opacity: 0;
+}
+
+#cta_arr {
+  /*left:-300px;*/
+  background: url('_assets/cta_arr_L.png') no-repeat;
+}

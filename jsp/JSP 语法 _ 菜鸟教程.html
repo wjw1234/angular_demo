@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://www.runoob.com/jsp/jsp-syntax.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+  <meta property="qc:admins" content="465267610762567726375">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>JSP 语法 | 菜鸟教程</title>
+
+  <link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="canonical" href="http://www.runoob.com/jsp/jsp-syntax.html">
+<meta name="keywords" content="JSP 语法">
+<meta name="description" content="JSP 语法   本小节将会简单地介绍一下JSP开发中的基础语法。    脚本程序 脚本程序可以包含任意量的Java语句、变量、方法或表达式，只要它们在脚本语言中是有效的。  脚本程序的语法格式：     或者，您也可以编写与其等价的XML语句，就像下面这样：      代码片段    任何文本、HTML标签、JSP元素必须写在脚本程序的外面。  下面给出一个示例，同时也是本教程的第一个JSP示例：   Hello World  Hel..">
+		
+	<link rel="shortcut icon" href="http://static.runoob.com/images/favicon.ico" mce_href="//static.runoob.com/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./JSP 语法 _ 菜鸟教程_files/style.css" type="text/css" media="all">	
+	<link rel="stylesheet" href="./JSP 语法 _ 菜鸟教程_files/font-awesome.min.css" media="all">	
+  <script src="./JSP 语法 _ 菜鸟教程_files/ca-pub-5751451760833794.js.下载"></script><script src="./JSP 语法 _ 菜鸟教程_files/jquery.min.js.下载"></script>
+  <!--[if lt IE 9]>
+     <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+  <link rel="apple-touch-icon" href="http://static.runoob.com/images/icon/mobile-icon.png">
+  <meta name="apple-mobile-web-app-title" content="菜鸟教程">
+</head>
+<body>
+<!--  头部 -->
+<div class="container logo-search">
+
+  <div class="col search row-search-mobile">
+    <form action="http://www.runoob.com/jsp/index.php">
+      <input class="placeholder" value="搜索……" name="s" autocomplete="off">
+    </form>
+  </div>
+
+  <div class="row">
+    <div class="col logo">
+      <h1><a href="http://www.runoob.com/">菜鸟教程 -- 学的不仅是技术，更是梦想！</a></h1>
+    </div>
+        <div class="col right-list"> 
+    <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse" id="pull" style=""> <i class="fa fa-navicon"></i> </button>
+    </div>
+        <div class="col search search-desktop last">
+      <form action="http://www.runoob.com/" target="_blank">
+        <input class="placeholder" id="s" name="s" value="搜索……" autocomplete="off">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- 导航栏 -->
+<!-- 导航栏 -->
+<div class="container navigation">
+	<div class="row">
+		<div class="col nav">
+			<ul class="pc-nav">
+				<li><a href="http://www.runoob.com/">首页</a></li>
+				<li><a href="http://www.runoob.com/html/html-tutorial.html">HTML</a></li>
+				<li><a href="http://www.runoob.com/css/css-tutorial.html">CSS</a></li>
+				<li><a href="http://www.runoob.com/js/js-tutorial.html">JavaScript</a></li>
+				<li><a href="http://www.runoob.com/jquery/jquery-tutorial.html">jQuery</a></li>
+				<li><a href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html">Bootstrap</a></li>
+				<li><a href="http://www.runoob.com/sql/sql-tutorial.html">SQL</a></li>
+				<li><a href="http://www.runoob.com/mysql/mysql-tutorial.html">MySQL</a></li>
+				<li><a href="http://www.runoob.com/php/php-tutorial.html">PHP</a></li>
+				<li><a href="http://www.runoob.com/python/python-tutorial.html">Python2</a></li>
+				<li><a href="http://www.runoob.com/python3/python3-tutorial.html">Python3</a></li>
+				<li><a href="http://www.runoob.com/cprogramming/c-tutorial.html">C</a></li>
+				<li><a href="http://www.runoob.com/cplusplus/cpp-tutorial.html">C++</a></li>
+				<li><a href="http://www.runoob.com/csharp/csharp-tutorial.html">C#</a></li>
+				<li><a href="http://www.runoob.com/java/java-tutorial.html">Java</a></li>
+				<li><a href="http://www.runoob.com/sitemap">更多……</a></li>
+				<!--
+				<li><a href="javascript:;" class="runoob-pop">登录</a></li>
+				-->
+      		</ul>
+			<ul class="mobile-nav">
+				<li><a href="http://www.runoob.com/">首页</a></li>
+				<li><a href="http://www.runoob.com/html/html-tutorial.html">HTML</a></li>
+				<li><a href="http://www.runoob.com/css/css-tutorial.html">CSS</a></li>
+				<li><a href="http://www.runoob.com/js/js-tutorial.html">JavaScript</a></li>
+				<a href="javascript:void(0)" class="search-reveal">Search</a> 
+			</ul>
+			
+		</div>
+	</div>
+</div><!--  内容  -->
+<div class="container main">
+	<!-- 中间 -->
+	<div class="row">
+	
+<div class="col left-column">
+	<div class="tab">JSP 教程</div>
+	<div class="sidebar-box gallery-list">
+		<div class="design" id="leftcolumn">
+						<a target="_top" title="JSP 教程" href="http://www.runoob.com/jsp/jsp-tutorial.html">
+			JSP 教程			</a>
+						<a target="_top" title="JSP 简介" href="http://www.runoob.com/jsp/jsp-intro.html">
+			JSP 简介			</a>
+						<a target="_top" title="JSP 开发环境搭建" href="http://www.runoob.com/jsp/jsp-setup.html">
+			JSP 开发环境搭建			</a>
+			<a target="_top" title="Eclipse JSP/Servlet" href="http://www.runoob.com/jsp/eclipse-jsp.html"> Eclipse JSP/Servlet</a>			<a target="_top" title="JSP 结构" href="http://www.runoob.com/jsp/jsp-architecture.html">
+			JSP 结构			</a>
+						<a target="_top" title="JSP 生命周期" href="http://www.runoob.com/jsp/jsp-life-cycle.html">
+			JSP 生命周期			</a>
+						<a target="_top" title="JSP 语法" href="http://www.runoob.com/jsp/jsp-syntax.html">
+			JSP 语法			</a>
+						<a target="_top" title="JSP 指令" href="http://www.runoob.com/jsp/jsp-directives.html">
+			JSP 指令			</a>
+						<a target="_top" title="JSP 动作元素" href="http://www.runoob.com/jsp/jsp-actions.html">
+			JSP 动作元素			</a>
+						<a target="_top" title="JSP 隐式对象" href="http://www.runoob.com/jsp/jsp-implicit-objects.html">
+			JSP 隐式对象			</a>
+						<a target="_top" title="JSP 客户端请求" href="http://www.runoob.com/jsp/jsp-client-request.html">
+			JSP 客户端请求			</a>
+						<a target="_top" title="JSP 服务器响应" href="http://www.runoob.com/jsp/jsp-server-response.html">
+			JSP 服务器响应			</a>
+						<a target="_top" title="JSP HTTP 状态码" href="http://www.runoob.com/jsp/jsp-http-status-codes.html">
+			JSP HTTP 状态码			</a>
+						<a target="_top" title="JSP 表单处理" href="http://www.runoob.com/jsp/jsp-form-processing.html">
+			JSP 表单处理			</a>
+						<a target="_top" title="JSP 过滤器" href="http://www.runoob.com/jsp/jsp-writing-filters.html">
+			JSP 过滤器			</a>
+						<a target="_top" title="JSP Cookie 处理" href="http://www.runoob.com/jsp/jsp-cookies.html">
+			JSP Cookie 处理			</a>
+						<a target="_top" title="JSP Session" href="http://www.runoob.com/jsp/jsp-session.html">
+			JSP Session			</a>
+						<a target="_top" title="JSP 文件上传" href="http://www.runoob.com/jsp/jsp-file-uploading.html">
+			JSP 文件上传			</a>
+						<a target="_top" title="JSP 日期处理" href="http://www.runoob.com/jsp/jsp-handling-date.html">
+			JSP 日期处理			</a>
+						<a target="_top" title="JSP 页面重定向" href="http://www.runoob.com/jsp/jsp-page-redirect.html">
+			JSP 页面重定向			</a>
+						<a target="_top" title="JSP 点击量统计" href="http://www.runoob.com/jsp/jsp-hits-counter.html">
+			JSP 点击量统计			</a>
+						<a target="_top" title="JSP 自动刷新" href="http://www.runoob.com/jsp/jsp-auto-refresh.html">
+			JSP 自动刷新			</a>
+						<a target="_top" title="JSP 发送邮件" href="http://www.runoob.com/jsp/jsp-sending-email.html">
+			JSP 发送邮件			</a>
+			<br><h2 class="left"><span class="left_h2">JSP 高级教程</span></h2>			<a target="_top" title="JSP 标准标签库（JSTL）" href="http://www.runoob.com/jsp/jsp-jstl.html">
+			JSP 标准标签库（JSTL）			</a>
+						<a target="_top" title="JSP 连接数据库" href="http://www.runoob.com/jsp/jsp-database-access.html">
+			JSP 连接数据库			</a>
+						<a target="_top" title="JSP XML 数据处理" href="http://www.runoob.com/jsp/jsp-xml-data.html">
+			JSP XML 数据处理			</a>
+						<a target="_top" title="JSP JavaBean" href="http://www.runoob.com/jsp/jsp-javabean.html">
+			JSP JavaBean			</a>
+						<a target="_top" title="JSP 自定义标签" href="http://www.runoob.com/jsp/jsp-custom-tags.html">
+			JSP 自定义标签			</a>
+						<a target="_top" title="JSP 表达式语言" href="http://www.runoob.com/jsp/jsp-expression-language.html">
+			JSP 表达式语言			</a>
+						<a target="_top" title="JSP 异常处理" href="http://www.runoob.com/jsp/jsp-exception-handling.html">
+			JSP 异常处理			</a>
+						<a target="_top" title="JSP 调试" href="http://www.runoob.com/jsp/jsp-debugging.html">
+			JSP 调试			</a>
+						<a target="_top" title="JSP 国际化" href="http://www.runoob.com/jsp/jsp-internationalization.html">
+			JSP 国际化			</a>
+				
+		</div>
+	</div>	
+</div>	<div class="col middle-column">
+		
+	
+	<div class="article">
+			<div class="article-heading-ad">
+		<script async="" src="./JSP 语法 _ 菜鸟教程_files/adsbygoogle.js.下载"></script>
+		<!-- 移动版 自动调整 -->
+		<ins class="adsbygoogle" style="display:inline-block;min-width:300px;max-width:970px;width:100%;height:90px" data-ad-client="ca-pub-5751451760833794" data-ad-slot="1691338467" data-ad-format="horizontal" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:742px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:742px;background-color:transparent"><iframe width="742" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:742px;height:90px;" src="./JSP 语法 _ 菜鸟教程_files/saved_resource.html"></iframe></ins></ins></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		</div>
+		<div class="previous-next-links">
+			<div class="previous-design-link"><i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i> <a href="http://www.runoob.com/jsp/jsp-life-cycle.html" rel="prev"> JSP 生命周期</a> </div>
+			<div class="next-design-link"><a href="http://www.runoob.com/jsp/jsp-directives.html" rel="next"> JSP 指令</a> <i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i></div>
+		</div>
+		<div class="article-body">
+		
+			<div class="article-intro" id="content">
+			
+			<h1>JSP <span class="color_h1">语法</span>
+</h1>
+
+<p>本小节将会简单地介绍一下JSP开发中的基础语法。
+</p>
+
+<hr>
+<h2>脚本程序</h2>
+<p>脚本程序可以包含任意量的Java语句、变量、方法或表达式，只要它们在脚本语言中是有效的。</p>
+<p>
+脚本程序的语法格式：</p>
+<pre>&lt;% 代码片段 %&gt;
+</pre>
+<p>
+或者，您也可以编写与其等价的XML语句，就像下面这样：</p>
+<pre>&lt;jsp:scriptlet&gt;
+   代码片段
+&lt;/jsp:scriptlet&gt;
+</pre>
+<p>
+任何文本、HTML标签、JSP元素必须写在脚本程序的外面。</p>
+<p>
+下面给出一个示例，同时也是本教程的第一个JSP示例：</p>
+<pre>&lt;html&gt;
+&lt;head&gt;&lt;title&gt;Hello World&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+Hello World!&lt;br/&gt;
+&lt;%
+out.println("Your IP address is " + request.getRemoteAddr());
+%&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p><b>注意：</b>请确保Apache Tomcat已经安装在C:\apache-tomcat-7.0.2目录下并且运行环境已经正确设置。</p>
+<p>
+将以上代码保存在hello.jsp中，然后将它放置在 C:\apache-tomcat-7.0.2\webapps\ROOT目录下，打开浏览器并在地址栏中输入http://localhost:8080/hello.jsp。运行后得到以下结果：</p>
+<p>
+<img src="./JSP 语法 _ 菜鸟教程_files/jsp_hello_world.jpg">
+
+</p>
+
+<h3>中文编码问题</h3>
+<p>如果我们要在页面正常显示中文，我们需要在 JSP 文件头部添加以下代码：&lt;&gt;
+</p><pre>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%&gt;
+</pre>
+<p>接下来我们将以上程序修改为：</p>
+<pre>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Hello World!&lt;br/&gt;
+&lt;%
+out.println("你的 IP 地址 " + request.getRemoteAddr());
+%&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>这样中文就可以正常显示了。</p>
+
+<hr>
+<h2>
+	JSP声明</h2>
+<p>一个声明语句可以声明一个或多个变量、方法，供后面的Java代码使用。在JSP文件中，您必须先声明这些变量和方法然后才能使用它们。</p>
+<p>
+JSP声明的语法格式：</p>
+<pre>&lt;%! declaration; [ declaration; ]+ ... %&gt;
+</pre>
+<p>
+或者，您也可以编写与其等价的XML语句，就像下面这样：</p>
+<pre>&lt;jsp:declaration&gt;
+   代码片段
+&lt;/jsp:declaration&gt;
+</pre>
+<p>
+程序示例：</p>
+<pre>&lt;%! int i = 0; %&gt; 
+&lt;%! int a, b, c; %&gt; 
+&lt;%! Circle a = new Circle(2.0); %&gt; 
+</pre>
+<hr>
+<h2>
+	JSP表达式</h2><p>
+一个JSP表达式中包含的脚本语言表达式，先被转化成String，然后插入到表达式出现的地方。</p><p>
+由于表达式的值会被转化成String，所以您可以在一个文本行中使用表达式而不用去管它是否是HTML标签。</p><p>
+
+表达式元素中可以包含任何符合Java语言规范的表达式，但是不能使用分号来结束表达式。</p><p>
+JSP表达式的语法格式：</p>
+<pre>&lt;%= 表达式 %&gt;
+</pre>
+<p>
+同样，您也可以编写与之等价的XML语句：</p>
+<pre>&lt;jsp:expression&gt;
+   表达式
+&lt;/jsp:expression&gt;
+</pre><p>
+程序示例：</p>
+<pre>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;
+   今天的日期是: &lt;%= (new java.util.Date()).toLocaleString()%&gt;
+&lt;/p&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+</pre>
+<p>运行后得到以下结果：</p>
+<pre>今天的日期是: 2016-6-25 13:40:07
+</pre><hr>
+<h2>
+	JSP注释</h2>
+<p>JSP注释主要有两个作用：为代码作注释以及将某段代码注释掉。</p>
+<p>
+JSP注释的语法格式：</p>
+<pre>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;%-- 该部分注释在网页中不会被显示--%&gt; 
+&lt;p&gt;
+   今天的日期是: &lt;%= (new java.util.Date()).toLocaleString()%&gt;
+&lt;/p&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+</pre>
+<p>
+运行后得到以下结果：</p>
+<pre>今天的日期是: 2016-6-25 13:41:26
+</pre>
+<p>
+不同情况下使用注释的语法规则：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>语法</strong></th>
+			<th>
+				描述</th>
+		</tr>
+		<tr>
+			<td>
+				&lt;%-- 注释 --%&gt;</td>
+			<td>
+				JSP注释，注释内容不会被发送至浏览器甚至不会被编译</td>
+		</tr>
+		<tr>
+			<td>
+				&lt;!-- 注释 --&gt;</td>
+			<td>
+				HTML注释，通过浏览器查看网页源代码时可以看见注释内容</td>
+		</tr>
+		<tr>
+			<td>
+				&lt;\%</td>
+			<td>
+				代表静态 &lt;%常量</td>
+		</tr>
+		<tr>
+			<td>
+				%\&gt;</td>
+			<td>
+				代表静态 %&gt; 常量</td>
+		</tr>
+		<tr>
+			<td>
+				\'</td>
+			<td>
+				在属性中使用的单引号</td>
+		</tr>
+		<tr>
+			<td>
+				\"</td>
+			<td>
+				在属性中使用的双引号</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	JSP指令</h2>
+	<p>
+JSP指令用来设置与整个JSP页面相关的属性。	</p>
+<p>
+JSP指令语法格式：</p>
+<pre>&lt;%@ directive attribute="value" %&gt;
+</pre>
+<p>
+这里有三种指令标签：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>指令</strong></th>
+			<th>
+				<strong>描述</strong></th>
+		</tr>
+		<tr>
+			<td>
+				&lt;%@ page ... %&gt;</td>
+			<td>
+				定义页面的依赖属性，比如脚本语言、error页面、缓存需求等等</td>
+		</tr>
+		<tr>
+			<td>
+				&lt;%@ include ... %&gt;</td>
+			<td>
+				包含其他文件</td>
+		</tr>
+		<tr>
+			<td>
+				&lt;%@ taglib ... %&gt;</td>
+			<td>
+				引入标签库的定义，可以是自定义标签</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	JSP行为</h2>
+	<p>
+JSP行为标签使用XML语法结构来控制servlet引擎。它能够动态插入一个文件，重用JavaBean组件，引导用户去另一个页面，为Java插件产生相关的HTML等等。</p>
+<p>
+行为标签只有一种语法格式，它严格遵守XML标准：</p>
+<pre>&lt;jsp:action_name attribute="value" /&gt;
+</pre><p>
+行为标签基本上是一些预先就定义好的函数，下表罗列出了一些可用的JSP行为标签：：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>语法</strong></th>
+			<th>
+				<b>描述</b></th>
+		</tr>
+		<tr>
+			<td>
+				jsp:include</td>
+			<td>
+				用于在当前页面中包含静态或动态资源</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:useBean</td>
+			<td>
+				寻找和初始化一个JavaBean组件</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:setProperty</td>
+			<td>
+				设置 JavaBean组件的值</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:getProperty</td>
+			<td>
+				将&nbsp;JavaBean组件的值插入到 output中</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:forward</td>
+			<td>
+				从一个JSP文件向另一个文件传递一个包含用户请求的request对象</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:plugin</td>
+			<td>
+				用于在生成的HTML页面中包含Applet和JavaBean对象</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:element</td>
+			<td>
+				动态创建一个XML元素</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:attribute</td>
+			<td>
+				定义动态创建的XML元素的属性</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:body</td>
+			<td>
+				定义动态创建的XML元素的主体</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:text</td>
+			<td>
+				用于封装模板数据</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	JSP隐含对象</h2><p>
+JSP支持九个自动定义的变量，江湖人称隐含对象。这九个隐含对象的简介见下表：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>对象</strong></th>
+			<th>
+				<strong>描述</strong></th>
+		</tr>
+		<tr>
+			<td>
+				request</td>
+			<td>
+				<strong>HttpServletRequest</strong>类的实例</td>
+		</tr>
+		<tr>
+			<td>
+				response</td>
+			<td>
+				<strong>HttpServletResponse</strong>类的实例</td>
+		</tr>
+		<tr>
+			<td>
+				out</td>
+			<td>
+				<strong>PrintWriter</strong>类的实例，用于把结果输出至网页上</td>
+		</tr>
+		<tr>
+			<td>
+				session</td>
+			<td>
+				<strong>HttpSession</strong>类的实例</td>
+		</tr>
+		<tr>
+			<td>
+				application</td>
+			<td>
+				<strong>ServletContext</strong>类的实例，与应用上下文有关</td>
+		</tr>
+		<tr>
+			<td>
+				config</td>
+			<td>
+				<strong>ServletConfig</strong>类的实例</td>
+		</tr>
+		<tr>
+			<td>
+				pageContext</td>
+			<td>
+				<strong>PageContext</strong>类的实例，提供对JSP页面所有对象以及命名空间的访问</td>
+		</tr>
+		<tr>
+			<td>
+				page</td>
+			<td>
+				类似于Java类中的this关键字</td>
+		</tr>
+		<tr>
+			<td>
+				Exception</td>
+			<td>
+				<strong>Exception</strong>类的对象，代表发生错误的JSP页面中对应的异常对象</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	控制流语句</h2><p>
+JSP提供对Java语言的全面支持。您可以在JSP程序中使用Java API甚至建立Java代码块，包括判断语句和循环语句等等。</p>
+<h2>
+	判断语句</h2><p>
+If…else块，请看下面这个例子：</p>
+<pre>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%&gt;
+&lt;%! int day = 3; %&gt; 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;IF...ELSE 实例&lt;/h3&gt;
+&lt;% if (day == 1 | day == 7) { %&gt;
+      &lt;p&gt;今天是周末&lt;/p&gt;
+&lt;% } else { %&gt;
+      &lt;p&gt;今天不是周末&lt;/p&gt;
+&lt;% } %&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+</pre>
+<p>
+运行后得到以下结果：
+</p>
+<pre>IF...ELSE 实例
+今天不是周末
+</pre>
+<p>
+现在来看看switch…case块，与if…else块有很大的不同，它使用out.println()，并且整个都装在脚本程序的标签中，就像下面这样：</p>
+<pre>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%&gt;
+&lt;%! int day = 3; %&gt; 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;SWITCH...CASE 实例&lt;/h3&gt;
+&lt;% 
+switch(day) {
+case 0:
+   out.println("星期天");
+   break;
+case 1:
+   out.println("星期一");
+   break;
+case 2:
+   out.println("星期二");
+   break;
+case 3:
+   out.println("星期三");
+   break;
+case 4:
+   out.println("星期四");
+   break;
+case 5:
+   out.println("星期五");
+   break;
+default:
+   out.println("星期六");
+}
+%&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+</pre>
+<p>
+浏览器访问，运行后得出以下结果：</p>
+<pre>SWITCH...CASE 实例
+
+星期三
+</pre>
+	<hr><h2>循环语句</h2>
+	<p>
+在JSP程序中可以使用Java的三个基本循环类型：for，while，和 do…while。</p><p>
+让我们来看看for循环的例子，以下输出的不同字体大小的"菜鸟教程"：</p>
+<pre>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%&gt;
+&lt;%! int fontSize; %&gt; 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;For 循环实例&lt;/h3&gt;
+&lt;%for ( fontSize = 1; fontSize &lt;= 3; fontSize++){ %&gt;
+   &lt;font color="green" size="&lt;%= fontSize %&gt;"&gt;
+    菜鸟教程
+   &lt;/font&gt;&lt;br /&gt;
+&lt;%}%&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+</pre>
+<p>
+运行后得到以下结果：</p>
+<p><img width="70%" src="./JSP 语法 _ 菜鸟教程_files/7B4B85CF-FE4B-43CB-AAFF-F8594AD4342C.jpg"></p>
+<p>
+将上例改用while循环来写：</p>
+<pre>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%&gt;
+&lt;%! int fontSize; %&gt; 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;While 循环实例&lt;/h3&gt;
+&lt;%while ( fontSize &lt;= 3){ %&gt;
+   &lt;font color="green" size="&lt;%= fontSize %&gt;"&gt;
+    菜鸟教程
+   &lt;/font&gt;&lt;br /&gt;
+&lt;%fontSize++;%&gt;
+&lt;%}%&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+</pre>
+浏览器访问，输出结果为（fontSize 初始化为0，所以多输出了一行）：<br>
+<p><img width="70%" src="./JSP 语法 _ 菜鸟教程_files/4F744CC9-E484-45BA-AF18-27AFCF4AD45C.jpg"></p>
+	JSP运算符<p>
+JSP支持所有Java逻辑和算术运算符。</p><p>
+下表罗列出了JSP常见运算符，优先级从高到底：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>类别</strong></th>
+			<th>
+				<strong>操作符</strong></th>
+			<th>
+				<strong>结合性</strong></th>
+		</tr>
+		<tr>
+			<td>
+				后缀</td>
+			<td>
+				() [] . (点运算符)</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				一元</td>
+			<td>
+				++ - - ! ~</td>
+			<td>
+				右到左</td>
+		</tr>
+		<tr>
+			<td>
+				可乘性</td>
+			<td>
+				* / %&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				可加性</td>
+			<td>
+				+ -&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				移位</td>
+			<td>
+				&gt;&gt; &gt;&gt;&gt; &lt;&lt; &nbsp;</td>
+			<td>
+				左到右&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				关系</td>
+			<td>
+				&gt; &gt;= &lt; &lt;= &nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				相等/不等</td>
+			<td>
+				== !=&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				位与</td>
+			<td>
+				&amp;&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				位异或</td>
+			<td>
+				^&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				位或</td>
+			<td>
+				|&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				逻辑与</td>
+			<td>
+				&amp;&amp;&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				逻辑或</td>
+			<td>
+				||&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				条件判断</td>
+			<td>
+				?:&nbsp;</td>
+			<td>
+				右到左</td>
+		</tr>
+		<tr>
+			<td>
+				赋值</td>
+			<td>
+				= += -= *= /= %= &gt;&gt;= &lt;&lt;= &amp;= ^= |=&nbsp;</td>
+			<td>
+				右到左</td>
+		</tr>
+		<tr>
+			<td>
+				逗号&nbsp;</td>
+			<td>
+				,&nbsp;</td>
+			<td>
+				左到右&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	JSP 字面量</h2><p>
+JSP语言定义了以下几个字面量：</p>
+<ul>
+	<li>
+		布尔值(boolean)：true 和 false;</li>
+	<li>
+		整型(int)：与 Java 中的一样;</li>
+	<li>
+		浮点型(float)：与 Java 中的一样;</li>
+	<li>
+		字符串(string)：以单引号或双引号开始和结束;</li>
+	<li>
+		Null：null。</li>
+</ul>			
+			
+			</div>
+		</div>
+		
+		<div class="previous-next-links">
+			<div class="previous-design-link"><i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i> <a href="http://www.runoob.com/jsp/jsp-life-cycle.html" rel="prev"> JSP 生命周期</a> </div>
+			<div class="next-design-link"><a href="http://www.runoob.com/jsp/jsp-directives.html" rel="next"> JSP 指令</a> <i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i></div>
+		</div>
+		<!-- 笔记列表 -->
+		<style>
+.wrapper {
+  /*text-transform: uppercase; */
+  background: #ececec;
+  color: #555;
+  cursor: help;
+  font-family: "Gill Sans", Impact, sans-serif;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.wrapper .tooltip {
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: left;
+  background: #96b97d;
+  bottom: 100%;
+  color: #fff;
+  display: block;
+  left: -25px;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 14px;
+  pointer-events: none;
+  position: absolute;
+  
+  -webkit-transform: translateY(10px);
+     -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+     -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+      -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+       -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+.tooltip a {
+	color:#fff;
+}
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}  
+
+/* CSS Triangles - see Trevor's post */
+.wrapper .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid #96b97d 10px;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 20%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+.wrapper .tooltip1 {
+	margin-left: 50px;
+	padding-top: 0px;
+}
+.wrapper:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper .tooltip {
+  display: none;
+}
+
+.lte8 .wrapper:hover .tooltip {
+  display: block;
+}
+</style>
+
+
+<div id="respond" class="no_webshot"> 
+		<div class="comment-signarea" style="">
+	<h3 class="text-muted" id="share_code"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 点我分享笔记</h3>
+	<input type="hidden" name="is_user_logged_in" id="is_user_logged_in" value="0">
+	<p style="font-size:14px;">笔记需要是本篇文章的内容扩展！</p>
+	<p style="font-size:14px;"><a href="http://www.runoob.com/w3cnote/runoob-user-test-intro.html#invite" target="_blank">注册邀请码获取方式</a></p>
+		<!--<h3 class="text-muted"><i class="fa fa-info-circle" aria-hidden="true"></i> 分享笔记前必须<a href="javascript:;" class="runoob-pop">登录</a>！</h3>
+		<p><a href="/w3cnote/runoob-user-test-intro.html#invite" target="_blank">注册邀请码获取方式</a></p>-->
+	</div>
+		
+	<form action="http://www.runoob.com/wp-content/themes/runoob/option/addnote.php" method="post" id="commentform" style="display:none;">
+		<div class="comt">
+			<div class="comt-title">
+				<i style="font-size:36px;" class="fa fa-user-circle" aria-hidden="true"></i>				<p><a id="cancel-comment-reply-link" href="javascript:;">取消</a></p>
+			</div>
+			<div class="comt-box">
+			<div id="mded"></div>
+			
+				<div class="comt-ctrl">
+					<div class="comt-tips"><input type="hidden" name="comment_post_ID" value="5174" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</div>
+					<button type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-pencil" aria-hidden="true"></i> 分享笔记</button>
+				</div>
+			</div>
+		
+				
+					<div class="comt-comterinfo"> 
+						<ul id="comment-author-info">
+							<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="text-muted">昵称 (必填)</span></li>
+							<li class="form-inline"><label class="hide" for="email">邮箱</label><input class="ipt" type="text" name="email" id="email" value="" tabindex="3" placeholder="邮箱"><span class="text-muted">邮箱 (必填)</span></li>
+							<li class="form-inline"><label class="hide" for="url">引用地址</label><input class="ipt" type="text" name="url" id="url" value="" tabindex="4" placeholder="引用地址"><span class="text-muted">引用地址</span></li>
+						</ul>
+					</div>
+				
+			
+		</div>
+
+	</form>
+	</div>
+<script type="text/javascript">
+$(function() {
+	//初始化编辑器
+	
+	var editor = new Simditor({
+	  textarea: $('#mded'),
+	  placeholder: '写笔记...',
+	  upload: false,
+	  defaultImage: 'http://www.runoob.com/images/logo.png',
+	  codeLanguages: '',
+	  toolbar: [  'bold','code','ul','ol','image' ]
+	});
+	editor.on('selectionchanged', function() {
+		$(".code-popover").hide();
+	});
+
+	// 提交数据
+	$("#share_code").click(function() {
+		$(".comment-signarea").hide();
+		$("#commentform").show();
+		
+	});
+
+	// 提交笔记
+	var commentform=$('#commentform');
+	commentform.prepend('<div id="comment-status" ></div>');
+	var statusdiv=$('#comment-status');
+	
+	commentform.submit(function(e){
+		e.preventDefault();
+		var noteContent = editor.getValue();
+		// console.log(noteContent);
+		noteContent = noteContent.replace(/<pre><code>/g,"<pre>");
+		noteContent = noteContent.replace(/<\/code><\/pre>/g,"</pre>");
+		
+		// 系列化表单数据
+		var comment_parent = 0;
+		var is_user_logged_in = $("#is_user_logged_in").val();
+		var comment_post_ID =  5174;
+		var _wp_unfiltered_html_comment = $("#_wp_unfiltered_html_comment").val();
+		var comment = noteContent;
+		var author = $("#author").val();
+		var url = $("#url").val();
+		var email = $("#email").val();
+		if(isBlank(author) && is_user_logged_in==0) {
+			statusdiv.html('<p  class="ajax-error">请输入昵称！</p>');
+		} else if(isBlank(email)  && is_user_logged_in==0) {
+			statusdiv.html('<p  class="ajax-error">请输入邮箱！</p>');
+		} else {
+			// var formdata=commentform.serialize() + "&comment=" + noteContent ;
+			// 添加状态信息
+			statusdiv.html('<p>Processing...</p>');
+			// 获取表单提交地址
+			var formurl=commentform.attr('action');
+			
+			// 异步提交
+			$.ajax({
+					type: 'post',
+					url: formurl,
+					dataType:'json',
+					data: {"comment_parent":comment_parent,"comment_post_ID":comment_post_ID, "_wp_unfiltered_html_comment":_wp_unfiltered_html_comment,"comment":comment,"url":url, "email":email,"author":author},
+					error: function(XMLHttpRequest, textStatus, errorThrown){
+					statusdiv.html('<p class="ajax-error" >数据不完整或表单提交太快了！</p>');
+				},
+				success: function(data, textStatus){
+					if(data.errorno=="0") {
+						$("#submit").prop('disabled', true);
+						statusdiv.html('<p class="ajax-success" >笔记已提交审核，感谢分享笔记！</p>');
+						alert('笔记已提交审核，感谢分享笔记！');
+					}else{
+						statusdiv.html('<p class="ajax-error" >'+data.msg+'</p>');
+					}
+					commentform.find('textarea[name=comment]').val('');
+				}
+			});
+			setTimeout(function(){
+		        $("#submit").prop('disabled', false);
+		    }, 10*1000);
+		}
+		return false;
+
+	});
+	
+});
+function isBlank(str) {
+    return (!str || /^\s*$/.test(str));
+}
+</script>
+
+<link rel="stylesheet" href="./JSP 语法 _ 菜鸟教程_files/qa.css">
+<link rel="stylesheet" type="text/css" href="./JSP 语法 _ 菜鸟教程_files/simditor.min.css">
+<script type="text/javascript" src="./JSP 语法 _ 菜鸟教程_files/module.js.下载"></script>
+<script type="text/javascript" src="./JSP 语法 _ 菜鸟教程_files/hotkeys.js.下载"></script>
+<script type="text/javascript" src="./JSP 语法 _ 菜鸟教程_files/simditor.min.js.下载"></script>		<div class="sidebar-box ad-box ad-box-large">
+		<div class="ad-336280" style="display: none;">
+			
+		</div>
+		</div>
+		
+	</div>
+</div>
+	
+
+<!-- 右边栏 -->
+<div class="fivecol last right-column">
+<!--
+	<div class="tab tab-light-blue" style="text-align: center;">关注微信</div>
+	<div class="sidebar-box">
+		<a href="http://m.runoob.com/" target="_blank"> <img src="http://www.runoob.com/wp-content/themes/w3cschool.cc/assets/img/qrcode.jpg" alt="移动版"> </a>
+		<div class="qqinfo">
+		 <a target="_blank" href="http://jq.qq.com/?_wv=1027&k=dOwwKN" id="qqhref">
+		<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="菜鸟家族" title="菜鸟家族"></a>
+		<span>(群号：<span id="qqid">365967760</span>)</span>
+		</div>
+		
+	</div>
+	-->
+<style>
+.sidebar-tree .double-li {
+	width:300px;
+}
+.sidebar-tree .double-li li {
+    width: 44%;
+    line-height: 1.5em;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    display: inline;
+}
+</style>
+
+	
+		<div class="sidebar-box ad-box ad-box-large">
+		<div class="sidebar-box advertise-here" style="margin: 0 auto;">
+			<a href="javascript:void(0);" style="font-size: 16px; color:#64854c;font-weight:bold;"> <i class="fa fa-list" aria-hidden="true"></i>  分类导航</a>
+		</div>
+	<div class="sidebar-box sidebar-cate">
+		
+		<div class="sidebar-tree">
+			<ul><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> HTML / CSS</a><ul class="double-li"><li><a title="HTML 教程" href="http://www.runoob.com/html/html-tutorial.html">HTML 教程</a></li><li><a title="HTML5 教程" href="http://www.runoob.com/html/html5-intro.html">HTML5 教程</a></li><li><a title="CSS 教程" href="http://www.runoob.com/css/css-tutorial.html">CSS 教程</a></li><li><a title="CSS3 教程" href="http://www.runoob.com/css3/css3-tutorial.html">CSS3 教程</a></li><li><a title="Bootstrap 教程" href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html">Bootstrap 教程</a></li><li><a title="Foundation 教程" href="http://www.runoob.com/foundation/foundation-tutorial.html">Foundation 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> JavaScript</a><ul class="double-li"><li><a title="JavaScript 教程" href="http://www.runoob.com/js/js-tutorial.html">JavaScript 教程</a></li><li><a title="HTML DOM 教程" href="http://www.runoob.com/htmldom/htmldom-tutorial.html">HTML DOM 教程</a></li><li><a title="jQuery 教程" href="http://www.runoob.com/jquery/jquery-tutorial.html">jQuery 教程</a></li><li><a title="AngularJS 教程" href="http://www.runoob.com/angularjs/angularjs-tutorial.html">AngularJS 教程</a></li><li><a title="AngularJS2 教程" href="http://www.runoob.com/angularjs2/angularjs2-tutorial.html">AngularJS2 教程</a></li><li><a title="Vue.js 教程" href="http://www.runoob.com/vue2/vue-tutorial.html">Vue.js 教程</a></li><li><a title="React 教程" href="http://www.runoob.com/react/react-tutorial.html">React 教程</a></li><li><a title="jQuery UI 教程" href="http://www.runoob.com/jqueryui/jqueryui-tutorial.html">jQuery UI 教程</a></li><li><a title="jQuery EasyUI 教程" href="http://www.runoob.com/jeasyui/jqueryeasyui-tutorial.html">jQuery EasyUI 教程</a></li><li><a title="Node.js 教程" href="http://www.runoob.com/nodejs/nodejs-tutorial.html">Node.js 教程</a></li><li><a title="AJAX 教程" href="http://www.runoob.com/ajax/ajax-tutorial.html">AJAX 教程</a></li><li><a title="JSON 教程" href="http://www.runoob.com/json/json-tutorial.html">JSON 教程</a></li><li><a title="Highcharts 教程" href="http://www.runoob.com/highcharts/highcharts-tutorial.html">Highcharts 教程</a></li><li><a title="Google 地图 教程" href="http://www.runoob.com/googleapi/google-maps-basic.html">Google 地图 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 服务端</a><ul class="double-li"><li><a title="PHP 教程" href="http://www.runoob.com/php/php-tutorial.html">PHP 教程</a></li><li><a title="Python 教程" href="http://www.runoob.com/python/python-tutorial.html">Python 教程</a></li><li><a title="Python3 教程" href="http://www.runoob.com/python3/python3-tutorial.html">Python3 教程</a></li><li><a title="Django 教程" href="http://www.runoob.com/django/django-tutorial.html">Django 教程</a></li><li><a title="Linux 教程" href="http://www.runoob.com/linux/linux-tutorial.html">Linux 教程</a></li><li><a title="Docker 教程" href="http://www.runoob.com/docker/docker-tutorial.html">Docker 教程</a></li><li><a title="Ruby 教程" href="http://www.runoob.com/ruby/ruby-tutorial.html">Ruby 教程</a></li><li><a title="Java 教程" href="http://www.runoob.com/java/java-tutorial.html">Java 教程</a></li><li><a title="C 教程" href="http://www.runoob.com/c/c-tutorial.html">C 教程</a></li><li><a title="C++ 教程" href="http://www.runoob.com/cplusplus/cpp-tutorial.html">C++ 教程</a></li><li><a title="Perl 教程" href="http://www.runoob.com/perl/perl-tutorial.html">Perl 教程</a></li><li><a title="Servlet 教程" href="http://www.runoob.com/servlet/servlet-tutorial.html">Servlet 教程</a></li><li><a title="JSP 教程" href="http://www.runoob.com/jsp/jsp-tutorial.html">JSP 教程</a></li><li><a title="Lua 教程" href="http://www.runoob.com/lua/lua-tutorial.html">Lua 教程</a></li><li><a title="Scala 教程" href="http://www.runoob.com/scala/scala-tutorial.html">Scala 教程</a></li><li><a title="Go 教程" href="http://www.runoob.com/go/go-tutorial.html">Go 教程</a></li><li><a title="设计模式" href="http://www.runoob.com/design-pattern/design-pattern-tutorial.html">设计模式</a></li><li><a title="正则表达式" href="http://www.runoob.com/regexp/regexp-tutorial.html">正则表达式</a></li><li><a title="ASP 教程" href="http://www.runoob.com/asp/asp-tutorial.html">ASP 教程</a></li><li><a title="AppML 教程" href="http://www.runoob.com/appml/appml-tutorial.html">AppML 教程</a></li><li><a title="VBScript 教程" href="http://www.runoob.com/vbscript/vbscript-tutorial.html">VBScript 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 数据库</a><ul class="double-li"><li><a title="SQL 教程" href="http://www.runoob.com/sql/sql-tutorial.html">SQL 教程</a></li><li><a title="Mysql 教程" href="http://www.runoob.com/mysql/mysql-tutorial.html">Mysql 教程</a></li><li><a title="SQLite 教程" href="http://www.runoob.com/sqlite/sqlite-tutorial.html">SQLite 教程</a></li><li><a title="MongoDB 教程" href="http://www.runoob.com/mongodb/mongodb-tutorial.html">MongoDB 教程</a></li><li><a title="Redis 教程" href="http://www.runoob.com/redis/redis-tutorial.html">Redis 教程</a></li><li><a title="Memcached 教程" href="http://www.runoob.com/Memcached/Memcached-tutorial.html">Memcached 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 移动端</a><ul class="double-li"><li><a title="Android 教程" href="http://www.runoob.com/w3cnote/android-tutorial-intro.html">Android 教程</a></li><li><a title="Swift 教程" href="http://www.runoob.com/swift/swift-tutorial.html">Swift 教程</a></li><li><a title="jQuery Mobile 教程" href="http://www.runoob.com/jquerymobile/jquerymobile-tutorial.html">jQuery Mobile 教程</a></li><li><a title="ionic 教程" href="http://www.runoob.com/ionic/ionic-tutorial.html">ionic 教程</a></li><li><a title="Kotlin 教程" href="http://www.runoob.com/kotlin/kotlin-tutorial.html">Kotlin 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> XML 教程</a><ul class="double-li"><li><a title="XML 教程" href="http://www.runoob.com/xml/xml-tutorial.html">XML 教程</a></li><li><a title="DTD 教程" href="http://www.runoob.com/dtd/dtd-tutorial.html">DTD 教程</a></li><li><a title="XML DOM 教程" href="http://www.runoob.com/dom/dom-tutorial.html">XML DOM 教程</a></li><li><a title="XSLT 教程" href="http://www.runoob.com/xsl/xsl-tutorial.html">XSLT 教程</a></li><li><a title="XPath 教程" href="http://www.runoob.com/xpath/xpath-tutorial.html">XPath 教程</a></li><li><a title="XQuery 教程" href="http://www.runoob.com/xquery/xquery-tutorial.html">XQuery 教程</a></li><li><a title="XLink 教程" href="http://www.runoob.com/xlink/xlink-tutorial.html">XLink 教程</a></li><li><a title="XPointer 教程" href="http://www.runoob.com/xlink/xlink-tutorial.html">XPointer 教程</a></li><li><a title="XML Schema 教程" href="http://www.runoob.com/schema/schema-tutorial.html">XML Schema 教程</a></li><li><a title="XSL-FO 教程" href="http://www.runoob.com/xslfo/xslfo-tutorial.html">XSL-FO 教程</a></li><li><a title="SVG 教程" href="http://www.runoob.com/svg/svg-tutorial.html">SVG 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> ASP.NET</a><ul class="double-li"><li><a title="ASP.NET 教程" href="http://www.runoob.com/aspnet/aspnet-tutorial.html">ASP.NET 教程</a></li><li><a title="C# 教程" href="http://www.runoob.com/csharp/csharp-tutorial.html">C# 教程</a></li><li><a title="Web Pages 教程" href="http://www.runoob.com/aspnet/webpages-intro.html">Web Pages 教程</a></li><li><a title="Razor 教程" href="http://www.runoob.com/aspnet/razor-intro.html">Razor 教程</a></li><li><a title="MVC 教程" href="http://www.runoob.com/aspnet/mvc-intro.html">MVC 教程</a></li><li><a title="Web Forms 教程" href="http://www.runoob.com/aspnet/aspnet-intro.html">Web Forms 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> Web Service</a><ul class="double-li"><li><a title="Web Service 教程" href="http://www.runoob.com/webservices/webservices-tutorial.html">Web Service 教程</a></li><li><a title="WSDL 教程" href="http://www.runoob.com/wsdl/wsdl-tutorial.html">WSDL 教程</a></li><li><a title="SOAP 教程" href="http://www.runoob.com/soap/soap-tutorial.html">SOAP 教程</a></li><li><a title="RSS 教程" href="http://www.runoob.com/rss/rss-tutorial.html">RSS 教程</a></li><li><a title="RDF 教程" href="http://www.runoob.com/rdf/rdf-tutorial.html">RDF 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 开发工具</a><ul class="double-li"><li><a title="Eclipse 教程" href="http://www.runoob.com/eclipse/eclipse-tutorial.html">Eclipse 教程</a></li><li><a title="Git 教程" href="http://www.runoob.com/git/git-tutorial.html">Git 教程</a></li><li><a title="Firebug 教程" href="http://www.runoob.com/firebug/firebug-tutorial.html">Firebug 教程</a></li></ul></li><li style="margin: 0;"><a href="javascript:void(0);" class="tit"> 网站建设</a><ul class="double-li"><li><a title="HTTP 教程" href="http://www.runoob.com/http/http-tutorial.html">HTTP 教程</a></li><li><a title="网站建设指南" href="http://www.runoob.com/web/web-buildingprimer.html">网站建设指南</a></li><li><a title="浏览器信息" href="http://www.runoob.com/browsers/browser-information.html">浏览器信息</a></li><li><a title="网站主机教程" href="http://www.runoob.com/hosting/hosting-tutorial.html">网站主机教程</a></li><li><a title="TCP/IP 教程" href="http://www.runoob.com/tcpip/tcpip-tutorial.html">TCP/IP 教程</a></li><li><a title="W3C 教程" href="http://www.runoob.com/w3c/w3c-tutorial.html">W3C 教程</a></li><li><a title="网站品质" href="http://www.runoob.com/quality/quality-tutorial.html">网站品质</a></li></ul></li></ul>			</div>
+	
+	</div>
+	</div>
+	<br>
+	
+	<div class="sidebar-box ad-box ad-box-large">
+		<div class="sidebar-box advertise-here">
+			<a href="javascript:void(0);">Advertisement</a>
+		</div>
+		<div class="ad-600160">
+		<script async="" src="./JSP 语法 _ 菜鸟教程_files/adsbygoogle.js.下载"></script>
+		<!-- 侧栏1 -->
+		<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-5751451760833794" data-ad-slot="4106274865" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./JSP 语法 _ 菜鸟教程_files/saved_resource(1).html"></iframe></ins></ins></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		</div>
+	</div>
+</div></div>
+
+</div>
+
+<script>
+var aid = 5174;
+var uid = 0;
+var url = '/wp-content/themes/runoob/option/user/userinfo.php';
+
+
+$(function() {
+	$.post( url, {aid:aid, action:"collarticle", opt:'init'}, function( data ) {
+  		if(data.error==0) {
+  			$("#content").find("h1:first").append(data.msg);
+  			$(".comment-signarea").hide();
+  			$("#commentform").show();
+  			$("#comment-author-info li:lt(2)").hide();
+  			$("#is_user_logged_in").val(1);
+  			$(".comt-title p:first").html(data.username);
+
+  		} else {
+  			$(".comment-signarea").show();
+  			$("#commentform").hide();
+  			$("#is_user_logged_in").val(0);
+  		}
+	},'json');
+})
+
+function coll() {
+	$.post( url, {aid:aid, action:"collarticle", opt:'add'},function( data ) {
+  		if(data.error==0) {
+	  		$("#content").find("h1:first").find("a").attr("href","javascript:void(0);");
+	  		$("#content").find("h1:first").find("img").attr("src","http://www.runoob.com/wp-content/themes/runoob/assets/img/coll2.png").css({width:32+"px",height:32+"px"});
+  		}
+  		alert(data.msg);
+	 },'json');
+}
+
+</script>
+
+
+<!-- 反馈对话框开始 -->
+<div id="htmlfeedback-container" class="unselectable">
+    <div id="htmlfeedback-more">
+    	 <div id="htmlfeedback-info" style="display: inline-block;">
+        <i class="fa fa-comments-o" aria-hidden="true"></i> 我的建议
+        </div>
+
+        <div id="htmlfeedback-close" style="display: inline-block;">X</div>
+    </div>
+
+	<div id="htmlfeedback-container-more">	    
+		<h3>反馈内容<span style="color:red;display:inline-block;">（*必填）</span></h3>
+	
+		<p>
+			  <textarea id="htmlfeedback-input-description" name="description" placeholder="欢迎提出您在使用过程中遇到的问题或宝贵建议（400字以内），感谢您对菜鸟教程的支持。"></textarea> 
+			   
+			</p>
+				<form id="htmlfeedback-form">
+			<p style="font-size:14px;font-weight: bold;margin-top: 10px;;"> <input id="is-screenshots" type="checkbox">  是否截图</p>
+			<div id="screenshots" style="display: none;">
+		        <h3 style="margin-top: 10px;">截图标记颜色</h3>
+		        <p>
+		           
+		        	<input type="radio" name="marker" value="rgba(255,255,255,0)" checked=""> 白色
+		        	<input type="radio" name="marker" value="rgb(0,0,0)"> 黑色
+		        	<input type="radio" name="marker" value="rgba(255,0,0,0.5)"> 红色
+		        	<input type="radio" name="marker" value="rgba(0,255,0,0.5)"> 绿色
+		        	<input type="radio" name="marker" value="rgba(0,0,255,0.5)"> 蓝色
+		        </p>
+			</div>
+
+			<h3>
+			联系方式(邮箱)
+			</h3>
+			<input name="fb_email" type="text" class="fb-email" maxlength="100" placeholder="请留下您的联系方式，以便我们及时回复您。" id="feedback_email">
+			<p>
+				<input type="submit" id="htmlfeedback-submit" value="提交反馈">
+							
+			</p>
+			<br>
+			<hr>
+			<p style="margin: 5px;">
+				<strong>联系邮箱：<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" target="_balnk">429240967@qq.com</a></strong>
+							
+			</p>
+			<p style="margin: 5px;">
+				<strong>投稿页面：<a href="http://www.runoob.com/tougao" target="_balnk">http://www.runoob.com/tougao</a></strong>
+							
+			</p>
+		</form>
+	</div>	
+</div>
+<!-- 反馈对话框结束 -->
+
+<script type="text/javascript" src="./JSP 语法 _ 菜鸟教程_files/jquery.htmlfeedback.js.下载"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	// 初始化
+	$("body").htmlfeedback({
+		onShow: function() {
+			$("#htmlfeedback-close").show();
+			$("#htmlfeedback-container-more").show("fast").addClass("expanded");	
+			$("#htmlfeedback-info").html('<i class="fa fa-comments-o" aria-hidden="true"></i> 我的建议');
+			$("#htmlfeedback-more").css({"background-color":"#96b97d"});
+			$("#htmlfeedback-submit").prop('disabled',false);
+		},
+		onHide: function() {
+			$("#htmlfeedback-close").hide();
+			$("#htmlfeedback-container-more").hide("fast").removeClass("expanded");	
+		},
+		onPreRender: function() {
+		    $("#htmlfeedback-container").hide();
+	    },
+	    onPostRender: function(canvas) {
+		    $("#htmlfeedback-container").show();
+	    }
+	});
+	
+	// 显示隐藏反馈对话框
+	$("#htmlfeedback-more").click(function() {
+		$("body").htmlfeedback("toggle");
+		
+	});
+	
+	// 重置反馈
+	$("#htmlfeedback-reset").click(function() {
+		$("body").htmlfeedback("reset");
+	});
+	$("#is-screenshots").change(function(e) {
+		if($('#is-screenshots').prop('checked')) {
+			$('#screenshots').show();
+		} else {
+			$('#screenshots').hide();
+		}
+	});
+	// 上传到服务器
+	$("#htmlfeedback-form").submit(function(e) {
+		e.preventDefault();
+    	if($('#is-screenshots').prop('checked')) {
+			$("#htmlfeedback-info").html('<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> 反馈信息提交中……');
+			$("#htmlfeedback-more").css({"background-color":"#ffa52e"});
+			$("body").htmlfeedback("upload", {
+				data: {
+					"description": $("#htmlfeedback-input-description").val(),
+					"post_id" : 5174,
+					"fb_email" : $("#feedback_email").val()
+				},
+				url: "/feedback/feedback.php",
+				dataType: "json",
+				success:function(result){
+					if(result.flag==0) {
+						$("#htmlfeedback-info").html('<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 抱歉，提交失败：' + result.msg);
+					} else {
+						$("#htmlfeedback-info").html("您的意见我们已经收到了，谢谢！");
+						$("body").htmlfeedback("hide");
+					}
+				}
+			});
+		} else {
+			$("#htmlfeedback-more").css({"background-color":"#ffa52e"});
+			$.post(
+				"/feedback/feedback.php",
+				{"description": $("#htmlfeedback-input-description").val(),"post_id" : 5174,"fb_email" : $("#feedback_email").val()},
+				function(result){
+					if(result.flag==0) {
+						$("#htmlfeedback-info").html('<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 抱歉，提交失败：' + result.msg);
+					} else {
+						$("#htmlfeedback-submit").prop('disabled',true);
+						$("#htmlfeedback-info").html("您的意见我们已经收到了，谢谢！");
+						$("body").htmlfeedback("hide");
+					}
+				},
+				"json"
+			)
+		}
+	});
+	
+	// 背景颜色设置
+	$("input[name='marker']").change(function() {
+		$("body").htmlfeedback('color', $("input[name='marker']:checked").val());	
+	});
+});
+</script>
+
+<!-- 底部 -->
+
+
+<div id="footer" class="mar-t50">
+   <div class="runoob-block">
+    <div class="runoob cf">
+     <dl>
+      <dt>
+       在线实例
+      </dt>
+      <dd>
+       ·<a target="_blank" href="http://www.runoob.com/html/html-examples.html">HTML 实例</a>
+      </dd>
+      <dd>
+       ·<a target="_blank" href="http://www.runoob.com/css/css-examples.html">CSS 实例</a>
+      </dd>
+      <dd>
+       ·<a target="_blank" href="http://www.runoob.com/js/js-examples.html">JavaScript 实例</a>
+      </dd>
+      <dd>
+       ·<a target="_blank" href="http://www.runoob.com/ajx/ajax-examples.html">Ajax 实例</a>
+      </dd>
+       <dd>
+       ·<a target="_blank" href="http://www.runoob.com/jquery/jquery-examples.html">jQuery 实例</a>
+      </dd>
+      <dd>
+       ·<a target="_blank" href="http://www.runoob.com/xml/xml-examples.html">XML 实例</a>
+      </dd>
+      <dd>
+       ·<a target="_blank" href="http://www.runoob.com/java/java-examples.html">Java 实例</a>
+      </dd>
+     
+     </dl>
+     <dl>
+      <dt>
+      字符集&amp;工具
+      </dt>
+      <dd>
+       · <a target="_blank" href="http://www.runoob.com/charsets/html-charsets.html">HTML 字符集设置</a>
+      </dd>
+      <dd>
+       · <a target="_blank" href="http://www.runoob.com/tags/html-ascii.html">HTML ASCII 字符集</a>
+      </dd>
+     <dd>
+       · <a target="_blank" href="http://www.runoob.com/tags/ref-entities.html">HTML ISO-8859-1</a>
+      </dd> 
+      <dd>
+       · <a target="_blank" href="http://www.runoob.com/tags/html-symbols.html">HTML 实体符号</a>
+      </dd>
+      <dd>
+       · <a target="_blank" href="http://www.runoob.com/tags/html-colorpicker.html">HTML 拾色器</a>
+      </dd>
+      <dd>
+       · <a target="_blank" href="http://c.runoob.com/front-end/53">JSON 格式化工具</a>
+      </dd>
+     </dl>
+     <dl>
+      <dt>
+       最新更新
+      </dt>
+                   <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/game-programmer.html" title="一张图带你了解游戏程序员的学习之路">一张图带你了解...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/shell-special-char.html" title="Shell 中的特殊字符">Shell 中的特殊字符</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/js-to-top.html" title="JavaScript 返回顶部实例">JavaScript 返回...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/jni-getting-started-tutorials.html" title="JNI 入门教程">JNI 入门教程</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/c-programming-fwrite-and-fread-summary.html" title="fwrite 和 fread函数的用法小结">fwrite 和 fread...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/javascript-or-and-and.html" title="JavaScript 逻辑运算符 || 和 &amp;&amp;">JavaScript 逻辑...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/python/python-att-dictionary-popitem.html" title="Python 字典 popitem() 方法">Python 字典 pop...</a>
+      </dd>
+             </dl>
+     <dl>
+      <dt>
+       站点信息
+      </dt>
+      <dd>
+       ·
+       <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" rel="external nofollow">意见反馈</a>
+      </dd>
+      <dd>
+       ·
+      <a target="_blank" href="http://www.runoob.com/disclaimer">免责声明</a>
+       </dd>
+      <dd>
+       ·
+       <a target="_blank" href="http://www.runoob.com/aboutus">关于我们</a>
+       </dd>
+      <dd>
+       ·
+      <a target="_blank" href="http://www.runoob.com/archives">文章归档</a>
+      </dd>
+      
+     </dl>
+     <div class="search-share">
+      <div class="app-download">
+        <div>
+         <strong>关注微信</strong>
+        </div>
+      </div>
+      <div class="share">
+            <img width="128" height="128" src="data:image/png;base64,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">
+       </div>
+     </div>
+    </div>
+   </div>
+   <div class="w-1000 copyright">
+     Copyright © 2013-2017    <strong><a href="http://www.runoob.com/" target="_blank">菜鸟教程</a></strong>&nbsp;
+    <strong><a href="http://www.runoob.com/" target="_blank">runoob.com</a></strong> All Rights Reserved. 备案号：闽ICP备15012807号-1
+   </div>
+  </div>
+  <div class="fixed-btn">
+    <a class="go-top" href="javascript:void(0)" title="返回顶部"> <i class="fa fa-angle-up"></i></a>
+    <a class="qrcode" href="javascript:void(0)" title="关注我们"><i class="fa fa-qrcode"></i></a>
+    <a class="writer" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" style="font-size: 12px;" title="Bug 反馈"><i class="fa fa-envelope-o" style="font-size: 20px;"></i></a>
+    <!-- qrcode modal -->
+    <div id="bottom-qrcode" class="modal panel-modal hide fade in">
+      <h4>微信关注</h4>
+      <div class="panel-body"><img alt="微信关注" width="128" height="128" src="data:image/png;base64,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"></div> 
+    </div>
+  </div>
+ <div style="display:none;">
+ 
+  </div></body></html>

@@ -1,0 +1,188 @@
+body{
+  margin: 0px;
+}
+
+div, #container
+{
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+}
+
+div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#ad, #banner
+{
+  position:absolute;
+  display: block;
+  width: 726px; 
+  height: 88px;
+  overflow: hidden;
+}
+
+#ad{
+  left:0px;
+  border: rgb(145,153,153) 1px solid;
+  overflow:hidden;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#banner {
+  right:0px;
+}
+
+#hotspot {
+  display: block;
+  cursor:pointer;
+  z-index: 999;
+}
+
+#overlay {
+  display: block;
+  background-color: #fff;
+}
+
+#locs {
+  width: 900px;
+  background: url('_assets/locs.jpg') no-repeat;
+}
+
+#loc_01, #loc_02, #loc_03, .go, .go_usa, #endframe_txt, 
+#logo_main, #lockup, #cta_txt, #cta_main, #cta_arr
+{
+  background-size: 728px 90px !important;
+}
+
+
+#loc_01 {
+  background: url('_assets/loc_01.jpg') no-repeat;
+  background-size: 460px 90px !important;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: scale(1.01) rotate(0.01deg);
+  will-change: transform;
+}
+
+#loc_02 {
+  height: 114px;
+  background: url('_assets/loc_02.jpg') no-repeat;
+  background-size: 460px 90px !important;
+  left: 0px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: scale(1.01) rotate(0.01deg);
+  will-change: transform;
+}
+
+#loc_03 {
+  background: url('_assets/loc_03.jpg') no-repeat;
+  background-size: 460px 90px !important;
+  left: 0px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: scale(1.01) rotate(0.01deg);
+  will-change: transform;
+}
+
+.go {
+  background: url('_assets/go_L.png') no-repeat;
+  opacity: 0;
+  left: 0px;
+}
+
+.go_usa {
+  background: url('_assets/go_usa_L.png') no-repeat;
+  opacity: 0;
+  left: 0px;
+}
+
+#right_bg
+{
+  left: 460px;
+  width: 268px;
+  background-color: #0197a5;
+  z-index: 99;
+}
+
+#endframe {
+  left: 0px;
+  width: 728px;
+  background-color: #0197a5;
+  
+}
+
+#endframe_txt {
+  background: url('_assets/endframe_txt_L.png') no-repeat;
+}
+
+#logo_container {
+  opacity: 1;
+  left: 0;
+  z-index: 100;
+}
+
+#logo_main {
+  background: url('_assets/logo_main_L.png') no-repeat;
+  opacity: 1;
+}
+
+#lockup {
+  background: url('_assets/lockup_L.png') no-repeat;
+  opacity: 1;
+}
+
+#dots
+{
+  padding-top: 288px;
+}
+
+#dots svg
+{
+  width: 300px;
+  height: 600px;
+}
+
+.dot {
+  opacity: 0;
+}
+
+#cta_container {
+  opacity: 1;
+  z-index: 101;
+}
+
+#cta_box {
+/*
+  width: 125px;
+  height:35px;
+  left: 632px;
+  top: 28px; 
+  background-color: #fff;
+*/
+    width: 125px;
+    height: 33px;
+    left: 626px;
+    top: 28px;
+    background-color: #fff;
+}
+
+#cta_txt {
+  /*left:-300px;*/
+  background: url('_assets/cta_txt_L.png') no-repeat;
+}
+
+#cta_main {
+  /*left:-300px;*/
+  background: url('_assets/cta_main_L.png') no-repeat;
+  opacity: 0;
+}
+
+#cta_arr {
+  /*left:-300px;*/
+  background: url('_assets/cta_arr_L.png') no-repeat;
+}
